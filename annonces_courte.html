@@ -4,6 +4,8 @@
         <link rel="icon" href="./medias/favicon.png" type="image/png">
         <title>Ubisoft Location - Annonces</title>
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/annonces.css">
+        <link rel="stylesheet" href="./css/menu.css">
     </head>
     <body>
         <header>
@@ -21,13 +23,15 @@
                         </div>
                     </li>
                     <li><button onclick="window.location.href = './nouvelle_annonce.html'">Nouvelle Annonce</button></li>
+                    <li><button onclick="window.location.href = './mes_annonces.html'">Mes annonces</button></li>
                 </nav>
             </menu>
         </header>
-        <main class="pageAnnonce">
+        <main>
             <div class="corpsPageAnnonce">
                 <h2 id="titreAnnonces">Toutes les annonces pour une location ponctuelle (max 3 jours)</h2>
-                <section>
+                <section class="filtres">
+                    <button class="bouttonFiltre">Filtres <img alt="Flèche" src="./medias/fleche.png"></button>
                     <fieldset id="filtre">
                         <h3>Filtres</h3>
                         <form>

@@ -4,6 +4,8 @@
         <link rel="icon" href="./medias/favicon.png" type="image/png">
         <title>Ubisoft Location - Annonces</title>
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/annonces.css">
+        <link rel="stylesheet" href="./css/menu.css">
     </head>
     <body>
         <header>
@@ -21,13 +23,15 @@
                         </div>
                     </li>
                     <li><button onclick="window.location.href = './nouvelle_annonce.html'">Nouvelle Annonce</button></li>
+                    <li><button onclick="window.location.href = './mes_annonces.html'">Mes annonces</button></li>
                 </nav>
             </menu>
         </header>
-        <main class="pageAnnonce">
+        <main>
             <div class="corpsPageAnnonce">
-                <h2 id="titreAnnonces">Toutes les annonces pour une location longue durée (4 jours et +)</h2>
-                <section>
+                <h2 id="titreAnnonces">Toutes les annonces pour une location ponctuelle (max 3 jours)</h2>
+                <section class="filtres">
+                    <button class="bouttonFiltre">Filtres <img alt="Flèche" src="./medias/fleche.png"></button>
                     <fieldset id="filtre">
                         <h3>Filtres</h3>
                         <form>
@@ -101,7 +105,7 @@
                 <section id="annonces">
                     <div class="annonce">
                         <p>
-                            Annonce de l'agent : nomAgent<br>
+                            Annonce de l'agent : Toto<br>
                             <img src="./medias/logo.png"><br>
                             <b>Vélo électrique</b><br>
                             Studio de Gironde (33)<br>
@@ -113,11 +117,23 @@
                     </div>
                     <div class="annonce">
                         <p>
-                            Annonce de l'agent : nomAgent<br>
+                            Annonce de l'agent : Titi<br>
                             <img src="./medias/logo.png"><br>
-                            <b>Vélo électrique</b><br>
-                            Studio de Gironde (33)<br>
-                            Ville : <b>Bordeaux</b><br>
+                            <b>Vélo</b><br>
+                            Studio de Rhône (69)<br>
+                            Ville : <b>Rhône</b><br>
+                            Description :  Je propose de louer mon vélo acheté en 2019, plutôt bien entretenu, selle un peu abîmée
+                        </p>
+                        <a href="mailto:florian.gavoille.etu@univ-lille.fr">E-mail</a>
+                        <a href="tel:123">Téléphone</a><br>
+                    </div>
+                    <div class="annonce">
+                        <p>
+                            Annonce de l'agent : Michel<br>
+                            <img src="./medias/logo.png"><br>
+                            <b>Trotinette électrique</b><br>
+                            Studio de Rhône (69)<br>
+                            Ville : <b>Vénissieux</b><br>
                             Description :  vélo électrique acheté en 2021, très bon état, chargeur fourni
                         </p>
                         <a href="mailto:florian.gavoille.etu@univ-lille.fr">E-mail</a>
@@ -125,11 +141,11 @@
                     </div>
                     <div class="annonce">
                         <p>
-                            Annonce de l'agent : nomAgent<br>
+                            Annonce de l'agent : Karine<br>
                             <img src="./medias/logo.png"><br>
                             <b>Vélo électrique</b><br>
-                            Studio de Gironde (33)<br>
-                            Ville : <b>Bordeaux</b><br>
+                            Studio de Paris (75)<br>
+                            Ville : <b>Paris</b><br>
                             Description :  vélo électrique acheté en 2021, très bon état, chargeur fourni
                         </p>
                         <a href="mailto:florian.gavoille.etu@univ-lille.fr">E-mail</a>
@@ -137,11 +153,11 @@
                     </div>
                     <div class="annonce">
                         <p>
-                            Annonce de l'agent : nomAgent<br>
+                            Annonce de l'agent : Patrick<br>
                             <img src="./medias/logo.png"><br>
-                            <b>Vélo électrique</b><br>
+                            <b>Trotinette</b><br>
                             Studio de Gironde (33)<br>
-                            Ville : <b>Bordeaux</b><br>
+                            Ville : <b>Mérignac</b><br>
                             Description :  vélo électrique acheté en 2021, très bon état, chargeur fourni
                         </p>
                         <a href="mailto:florian.gavoille.etu@univ-lille.fr">E-mail</a>
@@ -149,11 +165,11 @@
                     </div>
                     <div class="annonce">
                         <p>
-                            Annonce de l'agent : nomAgent<br>
+                            Annonce de l'agent : Florian<br>
                             <img src="./medias/logo.png"><br>
-                            <b>Vélo électrique</b><br>
-                            Studio de Gironde (33)<br>
-                            Ville : <b>Bordeaux</b><br>
+                            <b>Vélo</b><br>
+                            Studio de Paris (75)<br>
+                            Ville : <b>Annelin</b><br>
                             Description :  vélo électrique acheté en 2021, très bon état, chargeur fourni
                         </p>
                         <a href="mailto:florian.gavoille.etu@univ-lille.fr">E-mail</a>
@@ -161,23 +177,11 @@
                     </div>
                     <div class="annonce">
                         <p>
-                            Annonce de l'agent : nomAgent<br>
+                            Annonce de l'agent : Julia<br>
                             <img src="./medias/logo.png"><br>
                             <b>Vélo électrique</b><br>
-                            Studio de Gironde (33)<br>
-                            Ville : <b>Bordeaux</b><br>
-                            Description :  vélo électrique acheté en 2021, très bon état, chargeur fourni
-                        </p>
-                        <a href="mailto:florian.gavoille.etu@univ-lille.fr">E-mail</a>
-                        <a href="tel:123">Téléphone</a><br>
-                    </div>
-                    <div class="annonce">
-                        <p>
-                            Annonce de l'agent : nomAgent<br>
-                            <img src="./medias/logo.png"><br>
-                            <b>Vélo électrique</b><br>
-                            Studio de Gironde (33)<br>
-                            Ville : <b>Bordeaux</b><br>
+                            Studio de Haute-Savoie (74)<br>
+                            Ville : <b>Annecy</b><br>
                             Description :  vélo électrique acheté en 2021, très bon état, chargeur fourni
                         </p>
                         <a href="mailto:florian.gavoille.etu@univ-lille.fr">E-mail</a>

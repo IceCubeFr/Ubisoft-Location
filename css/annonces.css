@@ -1,0 +1,125 @@
+fieldset#filtre {
+    display: none;
+    width: 250px;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.filtres {
+    position: absolute;
+    top: 140px;
+    left: 450px;
+}
+
+.bouttonFiltre>img {
+    width: 10px;
+    rotate: 90deg;
+    transition: 1s;
+}
+
+.filtres:hover img {
+    rotate: -90deg;
+}
+
+.filtres:hover>fieldset#filtre {
+    display: block;
+}
+
+#annonces {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 25vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main {
+    /*Image bg avec margin 0 et padding left right*/
+    margin: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-image: url('../medias/rayman.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.corpsPageAnnonce {
+    background-color: rgba(240,248,255,0.95);
+    border-radius: 20px;
+    padding: 20px;
+}           
+
+.annonce {
+    border-style:solid;
+    border-color:darkslategrey;
+    border-radius: 10px;
+    margin-bottom: 10px ;
+    width: 177px;
+    padding: 20px;  
+    margin-left: 10px;
+    vertical-align: middle;
+    padding-bottom: 5%;
+}
+
+.annonce img {
+    width: 170px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#annonces a {
+    text-decoration: none;
+    color: white;
+    background-color:#d80388;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+#annonces a:hover {
+    color: #d80388;
+    background-color: aliceblue;
+    border-color: #d80388;
+    border-style: solid;
+    border-width: 2px;
+}
+
+#titreAnnonces {
+    padding-top: 10px;
+    height: 60px;
+    color: #d80388;
+}
+
+button {
+    border-radius: 20px;
+    background-color: #d80388;
+    color: white;
+    border-color: #d80388;
+    border-style: double;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: 0.3s;
+}
+
+form label>input, form label>select {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+@media (max-width: 500px) {
+    .filtres {
+        position: absolute;
+        top: 260px;
+        left: 40%;
+    }
+    fieldset#filtre {
+        position: absolute;
+        left: -100%;
+    }
+}

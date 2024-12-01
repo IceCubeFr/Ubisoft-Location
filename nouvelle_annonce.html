@@ -4,6 +4,8 @@
         <link rel="icon" href="./medias/favicon.png" type="image/png">
         <title>Ubisoft Location - Nouvelle Annonce</title>
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/menu.css">
+        <link rel="stylesheet" href="./css/nouvelle-annonce.css">
     </head>
     <body>
         <header>
@@ -21,6 +23,7 @@
                         </div>
                     </li>
                     <li><button id="actualPage" onclick="window.location.href = './nouvelle_annonce.html'">Nouvelle Annonce</button></li>
+                    <li><button onclick="window.location.href = './mes_annonces.html'">Mes annonces</button></li>
                 </nav>
             </menu>
         </header>
@@ -125,7 +128,7 @@
                             name="description"
                             placeholder="Décrivez votre matériel (n'oubliez pas de préciser son état!)"
                             title="Merci d'être précis dans votre description"
-                            cols="40"
+                            wrap="hard"
                             rows="5"
                             required
                         ></textarea>
